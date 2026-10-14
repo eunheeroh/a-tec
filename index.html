@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>에이텍(A-Tec) 연구소 | AI로 가르치고, 디지털로 출판하다</title>
+<meta name="description" content="에이텍(A-Tec) 연구소 - AI 교육, 디지털 출판, 콘텐츠 제작의 융합 연구소. AI로 가르치고, 디지털로 출판하다.">
+<meta name="keywords" content="AI교육, 디지털출판, e-Publishing, 콘텐츠, A-Tec, 에이텍">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2300B4D8'/><text x='50' y='68' font-family='sans-serif' font-size='50' font-weight='bold' fill='white' text-anchor='middle'>At</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- LOADING SCREEN -->
+<div id="loader" class="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">
+      <div class="loader-mark">At</div>
+      <div class="loader-text">A-Tec<span>연구소</span></div>
+    </div>
+    <div class="loader-bar">
+      <div class="loader-bar-fill"></div>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <div class="logo-mark">At</div>
+      A-Tec<span>연구소</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#ceo" data-section="ceo">인사말</a></li>
+      <li><a href="#about" data-section="about">회사소개</a></li>
+      <li><a href="#brand" data-section="brand">브랜드</a></li>
+      <li><a href="#services" data-section="services">사업영역</a></li>
+      <li><a href="#portfolio" data-section="portfolio">포트폴리오</a></li>
+      <li><a href="#contact" data-section="contact">문의하기</a></li>
+      <li><a href="login.html" class="nav-login-btn"><i class="fas fa-sign-in-alt"></i> 로그인</a></li>
+      <li><a href="en.html" class="nav-lang-btn"><i class="fas fa-globe"></i> EN</a></li>
+      <li><a href="#" id="chatbotNavBtn" class="nav-chatbot-btn">상담챗봇</a></li>
+    </ul>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="메뉴 열기">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="hero-orb hero-orb-3"></div>
+  
+  <!-- Particle Canvas -->
+  <canvas id="heroParticles"></canvas>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      AI 교육 & 디지털 출판 연구소
+    </div>
+    <h1>
+      AI로 가르치고,<br>
+      <span class="highlight typing-text" id="typingText"></span>
+    </h1>
+    <p>
+      에이텍(A-Tec) 연구소는 AI 교육과 디지털 출판 콘텐츠의 융합을 통해<br>
+      새로운 배움의 경험을 설계합니다.
+    </p>
+    <div class="hero-buttons">
+      <a href="#services" class="btn btn-primary">
+        <i class="fas fa-rocket"></i> 사업영역 보기
+      </a>
+      <a href="#contact" class="btn btn-outline">
+        <i class="fas fa-envelope"></i> 문의하기
+      </a>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>스크롤하여 더 알아보기</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">회사 소개</div>
+      <div class="section-title">에이텍 연구소를 소개합니다</div>
+      <div class="section-desc">AI 기술과 교육·출판의 만남, 새로운 가치를 창출합니다.</div>
+    </div>
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-visual-inner">
+          <div class="about-icon-ring">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <div class="about-stats">
+            <div class="about-stat">
+              <div class="about-stat-num" data-count="150">0</div>
+              <div class="about-stat-label">교육 이수자</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-num" data-count="30">0</div>
+              <div class="about-stat-label">출판 콘텐츠</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-num" data-count="20">0</div>
+              <div class="about-stat-label">협력 기관</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <h3>AI 교육과 디지털 출판의 융합</h3>
+        <p>
+          에이텍(A-Tec) 연구소는 <strong>AI(인공지능)</strong>, <strong>Teach(교육)</strong>, 
+          <strong>e-Publishing(디지털 출판)</strong>, <strong>Contents(콘텐츠)</strong>의 
+          네 가지 핵심 가치를 기반으로 설립된 전문 연구소입니다.
+        </p>
+        <p>
+          누구나 쉽게 배우고, 누구나 쉽게 출판할 수 있는 세상을 만들어갑니다.
+          AI 기술을 활용한 교육 콘텐츠 개발과 디지털 출판 솔루션을 제공하여,
+          지식의 생산과 전달 방식을 혁신합니다.
+        </p>
+        <div class="about-values">
+          <span class="about-value-tag"><i class="fas fa-brain"></i> AI 기반 교육</span>
+          <span class="about-value-tag"><i class="fas fa-book-open"></i> 디지털 출판</span>
+          <span class="about-value-tag"><i class="fas fa-lightbulb"></i> 콘텐츠 혁신</span>
+          <span class="about-value-tag"><i class="fas fa-user-graduate"></i> 맞춤형 학습</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND IDENTITY -->
+<section id="brand" class="section-dark">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">브랜드 아이덴티티</div>
+      <div class="section-title">이름에 담긴 의미</div>
+      <div class="section-desc">"AI로 가르치고, 디지털로 출판하다"</div>
+    </div>
+    <div class="brand-grid">
+      <div class="brand-card reveal" data-delay="0">
+        <div class="brand-letter">A</div>
+        <div class="brand-word">AI</div>
+        <div class="brand-meaning">인공지능</div>
+        <p>최첨단 AI 기술을 활용하여 교육과 출판의 새로운 패러다임을 제시합니다.</p>
+        <div class="brand-icon"><i class="fas fa-robot"></i></div>
+      </div>
+      <div class="brand-card reveal" data-delay="100">
+        <div class="brand-letter">T</div>
+        <div class="brand-word">Teach</div>
+        <div class="brand-meaning">교육</div>
+        <p>누구나 쉽게 배울 수 있도록 체계적이고 혁신적인 교육 프로그램을 설계합니다.</p>
+        <div class="brand-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+      </div>
+      <div class="brand-card reveal" data-delay="200">
+        <div class="brand-letter">e</div>
+        <div class="brand-word">e-Publishing</div>
+        <div class="brand-meaning">디지털 출판</div>
+        <p>전자책, 인터랙티브 교재 등 디지털 출판의 모든 과정을 지원합니다.</p>
+        <div class="brand-icon"><i class="fas fa-tablet-alt"></i></div>
+      </div>
+      <div class="brand-card reveal" data-delay="300">
+        <div class="brand-letter">c</div>
+        <div class="brand-word">Contents</div>
+        <div class="brand-meaning">콘텐츠</div>
+        <p>고품질 교육 콘텐츠를 기획, 제작, 유통하여 지식의 가치를 극대화합니다.</p>
+        <div class="brand-icon"><i class="fas fa-photo-video"></i></div>
+      </div>
+    </div>
+    <div class="brand-footer reveal">
+      <div class="brand-lab">
+        <div class="brand-lab-icon"><i class="fas fa-flask"></i></div>
+        <div class="brand-lab-text">
+          <strong>연구소</strong> — 전문성과 신뢰감을 바탕으로 끊임없이 연구하고 혁신합니다.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">사업 영역</div>
+      <div class="section-title">사업 영역</div>
+      <div class="section-desc">AI 기술과 교육, 출판의 경계를 넘어 새로운 가치를 창출합니다.</div>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card reveal">
+        <div class="service-number">01</div>
+        <div class="service-icon">
+          <i class="fas fa-brain"></i>
+        </div>
+        <h3>AI 교육 프로그램</h3>
+        <p>초보자부터 전문가까지, 수준별 맞춤 AI 교육 커리큘럼을 설계하고 운영합니다. 실습 중심의 체계적인 학습 경험을 제공합니다.</p>
+        <div class="service-tags">
+          <span>ChatGPT</span><span>프롬프트</span><span>AI활용</span>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-number">02</div>
+        <div class="service-icon">
+          <i class="fas fa-book-reader"></i>
+        </div>
+        <h3>디지털 출판 솔루션</h3>
+        <p>전자책, 인터랙티브 교재, 멀티미디어 콘텐츠 등 다양한 형태의 디지털 출판물을 기획·제작·유통합니다.</p>
+        <div class="service-tags">
+          <span>전자책</span><span>EPUB</span><span>교재개발</span>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-number">03</div>
+        <div class="service-icon">
+          <i class="fas fa-video"></i>
+        </div>
+        <h3>AI 콘텐츠 제작</h3>
+        <p>AI 도구를 활용한 교육 콘텐츠, 영상, 이미지, 음성 등 멀티미디어 콘텐츠를 효율적으로 제작합니다.</p>
+        <div class="service-tags">
+          <span>영상제작</span><span>이미지생성</span><span>AI음성</span>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-number">04</div>
+        <div class="service-icon">
+          <i class="fas fa-chalkboard-teacher"></i>
+        </div>
+        <h3>교육 컨설팅</h3>
+        <p>기관 및 기업 대상 AI 활용 교육 체계 수립, 커리큘럼 설계, 강사 양성 등 전문 컨설팅 서비스를 제공합니다.</p>
+        <div class="service-tags">
+          <span>컨설팅</span><span>커리큘럼</span><span>강사양성</span>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-number">05</div>
+        <div class="service-icon">
+          <i class="fas fa-cogs"></i>
+        </div>
+        <h3>출판 자동화 도구</h3>
+        <p>AI 기반 원고 편집, 레이아웃 자동화, ISBN 관리 등 출판 워크플로우를 혁신하는 도구를 개발합니다.</p>
+        <div class="service-tags">
+          <span>자동화</span><span>워크플로우</span><span>AI편집</span>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-number">06</div>
+        <div class="service-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3>커뮤니티 & 네트워크</h3>
+        <p>AI 교육자, 디지털 출판 전문가, 콘텐츠 크리에이터를 연결하는 커뮤니티를 운영합니다.</p>
+        <div class="service-tags">
+          <span>네트워크</span><span>커뮤니티</span><span>협업</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CEO -->
+<section id="ceo" class="section-dark">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">대표 메시지</div>
+      <div class="section-title">대표 인사말</div>
+    </div>
+    <div class="ceo-container">
+      <div class="ceo-photo reveal">
+        <div class="ceo-photo-inner">
+          <img src="enn.png" alt="노은희 대표">
+        </div>
+      </div>
+      <div class="ceo-content reveal">
+        <blockquote>
+          "쉽고 잘 가르치는 것,<br>
+          그것이 <em>최고의 기술</em>입니다."
+        </blockquote>
+        <p class="ceo-message">
+          안녕하세요, 에이텍(A-Tec) 연구소 대표 <strong>노은희</strong>입니다.<br><br>
+          저는 오랫동안 IT 교육 현장에서 "어떻게 하면 더 쉽고, 더 잘 가르칠 수 있을까"를 
+          고민해 왔습니다. AI 시대가 열리면서, 교육과 출판의 방식도 근본적으로 변화하고 있습니다.<br><br>
+          에이텍 연구소는 이 변화의 중심에서, AI 기술을 교육과 출판에 융합하여 
+          누구나 쉽게 배우고, 누구나 자신의 지식을 세상에 전할 수 있도록 돕겠습니다.<br><br>
+          함께 만들어가는 새로운 배움의 세상, 에이텍 연구소가 함께하겠습니다.
+        </p>
+        <div class="ceo-signature">
+          <div class="ceo-name">노은희</div>
+          <div class="ceo-title">에이텍(A-Tec) 연구소 대표</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO / TIMELINE -->
+<section id="portfolio">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">포트폴리오 & 비전</div>
+      <div class="section-title">성장과 비전</div>
+      <div class="section-desc">에이텍 연구소의 주요 이정표와 앞으로의 비전을 소개합니다.</div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-line"></div>
+      
+      <div class="timeline-item reveal" data-side="left">
+        <div class="timeline-dot"><i class="fas fa-flag"></i></div>
+        <div class="timeline-content">
+          <div class="timeline-date">설립</div>
+          <h3>에이텍(A-Tec) 연구소 설립</h3>
+          <p>AI 교육과 디지털 출판을 융합하는 전문 연구소로 출발. "AI로 가르치고, 디지털로 출판하다"라는 비전 수립.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal" data-side="right">
+        <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
+        <div class="timeline-content">
+          <div class="timeline-date">교육</div>
+          <h3>AI 교육 프로그램 런칭</h3>
+          <p>초보자부터 전문가까지 아우르는 체계적인 AI 교육 커리큘럼 개발 및 운영 시작.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal" data-side="left">
+        <div class="timeline-dot"><i class="fas fa-book"></i></div>
+        <div class="timeline-content">
+          <div class="timeline-date">출판</div>
+          <h3>디지털 출판 플랫폼 구축</h3>
+          <p>전자책, 인터랙티브 교재 등 다양한 디지털 출판물 제작 및 유통 시스템 구축.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal" data-side="right">
+        <div class="timeline-dot"><i class="fas fa-rocket"></i></div>
+        <div class="timeline-content">
+          <div class="timeline-date">미래</div>
+          <h3>글로벌 AI 교육 & 출판 리더</h3>
+          <p>AI 기술 기반 교육 혁신과 디지털 출판의 글로벌 리더로 도약하여 지식의 민주화를 실현.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section-dark">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">문의하기</div>
+      <div class="section-title">문의하기</div>
+      <div class="section-desc">프로젝트 협업, 교육 문의 등 무엇이든 편하게 연락주세요.</div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div>
+            <div class="contact-item-label">주소</div>
+            <div class="contact-item-value">서울특별시 양천구</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div>
+            <div class="contact-item-label">이메일</div>
+            <div class="contact-item-value">info@a-tec.co.kr</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <div>
+            <div class="contact-item-label">전화</div>
+            <div class="contact-item-value">02-0000-0000</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <div>
+            <div class="contact-item-label">웹사이트</div>
+            <div class="contact-item-value">https://a-tec.netlify.app/</div>
+          </div>
+        </div>
+
+        <div class="contact-social">
+          <a href="#" class="social-link" aria-label="Blog"><i class="fas fa-blog"></i></a>
+          <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+      </div>
+
+      <div class="contact-form reveal" id="contactForm">
+        <div class="form-group">
+          <label for="contactName">이름 <span class="required">*</span></label>
+          <input type="text" id="contactName" placeholder="이름을 입력하세요" required>
+        </div>
+        <div class="form-group">
+          <label for="contactEmail">이메일 <span class="required">*</span></label>
+          <input type="email" id="contactEmail" placeholder="이메일을 입력하세요" required>
+        </div>
+        <div class="form-group">
+          <label for="contactSubject">문의 제목 <span class="required">*</span></label>
+          <input type="text" id="contactSubject" placeholder="문의 제목을 입력하세요" required>
+        </div>
+        <div class="form-group">
+          <label for="contactMessage">문의 내용</label>
+          <textarea id="contactMessage" placeholder="문의 내용을 상세히 입력해주세요" rows="5"></textarea>
+        </div>
+        <button class="btn btn-primary btn-submit" id="submitBtn" type="button">
+          <i class="fas fa-paper-plane"></i> 문의 보내기
+        </button>
+        <div id="formResult" class="form-result" style="display:none;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-mark">At</div>
+          A-Tec<span>연구소</span>
+        </div>
+        <div class="footer-slogan">AI로 가르치고, 디지털로 출판하다.</div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-link-group">
+          <h4>바로가기</h4>
+          <a href="#about">회사소개</a>
+          <a href="#brand">브랜드</a>
+          <a href="#services">사업영역</a>
+        </div>
+        <div class="footer-link-group">
+          <h4>더보기</h4>
+          <a href="#ceo">인사말</a>
+          <a href="#portfolio">포트폴리오</a>
+          <a href="#contact">문의하기</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        © 2026 에이텍(A-Tec) 연구소. All rights reserved.
+      </div>
+      <div class="footer-info">
+        서울특별시 양천구 | 대표 : 노은희 | info@a-tec.co.kr
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Chatbot FAB -->
+<button id="chatbotFab" class="chatbot-fab" aria-label="상담챗봇 열기">
+  <i class="fas fa-comment-dots chatbot-fab-icon-open"></i>
+  <i class="fas fa-times chatbot-fab-icon-close"></i>
+</button>
+
+<!-- Chatbot Panel -->
+<div id="chatbotPanel" class="chatbot-panel" aria-hidden="true">
+  <div class="chatbot-header">
+    <div class="chatbot-header-info">
+      <div class="chatbot-avatar"><i class="fas fa-robot"></i></div>
+      <div>
+        <div class="chatbot-title">A-Tec 상담봇</div>
+        <div class="chatbot-status"><span class="chatbot-online-dot"></span>온라인</div>
+      </div>
+    </div>
+    <button class="chatbot-close" id="chatbotClose" aria-label="닫기"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="chatbot-messages" id="chatbotMessages">
+    <div class="chatbot-msg bot">
+      <div class="chatbot-msg-bubble">안녕하세요! 에이텍 연구소 상담봇입니다. 😊<br>AI 교육, 디지털 출판, 컨설팅 등 무엇이든 문의해 주세요.</div>
+      <div class="chatbot-msg-time">지금</div>
+    </div>
+    <div class="chatbot-quickbtns">
+      <button class="chatbot-quick">AI 교육 안내</button>
+      <button class="chatbot-quick">디지털 출판</button>
+      <button class="chatbot-quick">컨설팅 문의</button>
+      <button class="chatbot-quick">연락처 확인</button>
+    </div>
+  </div>
+  <div class="chatbot-input-area">
+    <input type="text" id="chatbotInput" class="chatbot-input" placeholder="메시지를 입력하세요..." autocomplete="off">
+    <button id="chatbotSend" class="chatbot-send" aria-label="전송"><i class="fas fa-paper-plane"></i></button>
+  </div>
+</div>
+
+<!-- Back to Top -->
+<button id="backToTop" class="back-to-top" aria-label="맨 위로">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

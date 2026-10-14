@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A-Tec Lab | Teach with AI, Publish Digitally</title>
+<meta name="description" content="A-Tec Lab - A convergence lab for AI education, digital publishing, and content creation. Teach with AI, Publish Digitally.">
+<meta name="keywords" content="AI education, digital publishing, e-Publishing, contents, A-Tec">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2300B4D8'/><text x='50' y='68' font-family='sans-serif' font-size='50' font-weight='bold' fill='white' text-anchor='middle'>At</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- LOADING SCREEN -->
+<div id="loader" class="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">
+      <div class="loader-mark">At</div>
+      <div class="loader-text">A-Tec<span>Lab</span></div>
+    </div>
+    <div class="loader-bar">
+      <div class="loader-bar-fill"></div>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <div class="logo-mark">At</div>
+      A-Tec<span>Lab</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#ceo" data-section="ceo">Greeting</a></li>
+      <li><a href="#about" data-section="about">About</a></li>
+      <li><a href="#brand" data-section="brand">Brand</a></li>
+      <li><a href="#services" data-section="services">Services</a></li>
+      <li><a href="#portfolio" data-section="portfolio">Portfolio</a></li>
+      <li><a href="#contact" data-section="contact">Contact</a></li>
+      <li><a href="login.html" class="nav-login-btn"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+      <li><a href="index.html" class="nav-lang-btn"><i class="fas fa-globe"></i> KR</a></li>
+      <li><a href="#" id="chatbotNavBtn" class="nav-chatbot-btn">Chatbot</a></li>
+    </ul>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="hero-orb hero-orb-3"></div>
+  <canvas id="heroParticles"></canvas>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      AI Education & Digital Publishing Lab
+    </div>
+    <h1>
+      Teach with AI,<br>
+      <span class="highlight typing-text" id="typingText"></span>
+    </h1>
+    <p>
+      A-Tec Lab designs new learning experiences through<br>
+      the convergence of AI education and digital publishing.
+    </p>
+    <div class="hero-buttons">
+      <a href="#services" class="btn btn-primary">
+        <i class="fas fa-rocket"></i> Our Services
+      </a>
+      <a href="#contact" class="btn btn-outline">
+        <i class="fas fa-envelope"></i> Contact Us
+      </a>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll to explore</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">About Us</div>
+      <div class="section-title">Introducing A-Tec Lab</div>
+      <div class="section-desc">Where AI technology meets education and publishing to create new value.</div>
+    </div>
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-visual-inner">
+          <div class="about-icon-ring">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <div class="about-stats">
+            <div class="about-stat">
+              <div class="about-stat-num" data-count="150">0</div>
+              <div class="about-stat-label">Graduates</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-num" data-count="30">0</div>
+              <div class="about-stat-label">Publications</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-num" data-count="20">0</div>
+              <div class="about-stat-label">Partners</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <h3>Convergence of AI Education & Digital Publishing</h3>
+        <p>
+          A-Tec Lab is a specialized research institute founded on four core values:
+          <strong>AI (Artificial Intelligence)</strong>, <strong>Teach (Education)</strong>,
+          <strong>e-Publishing (Digital Publishing)</strong>, and <strong>Contents</strong>.
+        </p>
+        <p>
+          We are building a world where anyone can learn easily and publish freely.
+          By developing AI-powered educational content and digital publishing solutions,
+          we innovate how knowledge is created and delivered.
+        </p>
+        <div class="about-values">
+          <span class="about-value-tag"><i class="fas fa-brain"></i> AI Education</span>
+          <span class="about-value-tag"><i class="fas fa-book-open"></i> Digital Publishing</span>
+          <span class="about-value-tag"><i class="fas fa-lightbulb"></i> Content Innovation</span>
+          <span class="about-value-tag"><i class="fas fa-user-graduate"></i> Personalized Learning</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND IDENTITY -->
+<section id="brand" class="section-dark">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">Brand Identity</div>
+      <div class="section-title">The Meaning Behind Our Name</div>
+      <div class="section-desc">"Teach with AI, Publish Digitally"</div>
+    </div>
+    <div class="brand-grid">
+      <div class="brand-card reveal" data-delay="0">
+        <div class="brand-letter">A</div>
+        <div class="brand-word">AI</div>
+        <div class="brand-meaning">Artificial Intelligence</div>
+        <p>We leverage cutting-edge AI technology to present new paradigms in education and publishing.</p>
+        <div class="brand-icon"><i class="fas fa-robot"></i></div>
+      </div>
+      <div class="brand-card reveal" data-delay="100">
+        <div class="brand-letter">T</div>
+        <div class="brand-word">Teach</div>
+        <div class="brand-meaning">Education</div>
+        <p>We design systematic and innovative educational programs so anyone can learn with ease.</p>
+        <div class="brand-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+      </div>
+      <div class="brand-card reveal" data-delay="200">
+        <div class="brand-letter">e</div>
+        <div class="brand-word">e-Publishing</div>
+        <div class="brand-meaning">Digital Publishing</div>
+        <p>We support every aspect of digital publishing, from e-books to interactive textbooks.</p>
+        <div class="brand-icon"><i class="fas fa-tablet-alt"></i></div>
+      </div>
+      <div class="brand-card reveal" data-delay="300">
+        <div class="brand-letter">c</div>
+        <div class="brand-word">Contents</div>
+        <div class="brand-meaning">Content Creation</div>
+        <p>We plan, produce, and distribute high-quality educational content to maximize the value of knowledge.</p>
+        <div class="brand-icon"><i class="fas fa-photo-video"></i></div>
+      </div>
+    </div>
+    <div class="brand-footer reveal">
+      <div class="brand-lab">
+        <div class="brand-lab-icon"><i class="fas fa-flask"></i></div>
+        <div class="brand-lab-text">
+          <strong>Lab</strong> — We continuously research and innovate, grounded in expertise and trust.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">Services</div>
+      <div class="section-title">Our Services</div>
+      <div class="section-desc">Creating new value beyond the boundaries of AI, education, and publishing.</div>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card reveal">
+        <div class="service-number">01</div>
+        <div class="service-icon"><i class="fas fa-brain"></i></div>
+        <h3>AI Training Programs</h3>
+        <p>We design and operate customized AI education curricula for all levels, from beginners to experts, with hands-on learning experiences.</p>
+        <div class="service-tags">
+          <span>ChatGPT</span><span>Prompting</span><span>AI Tools</span>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-number">02</div>
+        <div class="service-icon"><i class="fas fa-book-reader"></i></div>
+        <h3>Digital Publishing Solutions</h3>
+        <p>We plan, produce, and distribute various digital publications including e-books, interactive textbooks, and multimedia content.</p>
+        <div class="service-tags">
+          <span>E-books</span><span>EPUB</span><span>Textbooks</span>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-number">03</div>
+        <div class="service-icon"><i class="fas fa-video"></i></div>
+        <h3>AI Content Production</h3>
+        <p>We efficiently produce multimedia content — video, images, and audio — using AI-powered tools for educational purposes.</p>
+        <div class="service-tags">
+          <span>Video</span><span>Image Gen</span><span>AI Voice</span>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-number">04</div>
+        <div class="service-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+        <h3>Education Consulting</h3>
+        <p>We provide professional consulting services for institutions and businesses, including AI education systems, curriculum design, and instructor training.</p>
+        <div class="service-tags">
+          <span>Consulting</span><span>Curriculum</span><span>Training</span>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-number">05</div>
+        <div class="service-icon"><i class="fas fa-cogs"></i></div>
+        <h3>Publishing Automation</h3>
+        <p>We develop tools that revolutionize publishing workflows, including AI-based manuscript editing, layout automation, and ISBN management.</p>
+        <div class="service-tags">
+          <span>Automation</span><span>Workflow</span><span>AI Editing</span>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-number">06</div>
+        <div class="service-icon"><i class="fas fa-users"></i></div>
+        <h3>Community & Network</h3>
+        <p>We operate a community connecting AI educators, digital publishing professionals, and content creators.</p>
+        <div class="service-tags">
+          <span>Network</span><span>Community</span><span>Collaboration</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CEO -->
+<section id="ceo" class="section-dark">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">CEO Message</div>
+      <div class="section-title">A Message from Our CEO</div>
+    </div>
+    <div class="ceo-container">
+      <div class="ceo-photo reveal">
+        <div class="ceo-photo-inner">
+          <img src="enn.png" alt="CEO Eunhee Noh">
+        </div>
+      </div>
+      <div class="ceo-content reveal">
+        <blockquote>
+          "Teaching simply and well —<br>
+          that is the <em>greatest skill</em>."
+        </blockquote>
+        <p class="ceo-message">
+          Hello, I am <strong>Eunhee Noh</strong>, CEO of A-Tec Lab.<br><br>
+          For many years in the field of IT education, I have been asking myself,
+          "How can we teach more easily and more effectively?" As the AI era unfolds,
+          the ways we educate and publish are fundamentally transforming.<br><br>
+          At the heart of this change, A-Tec Lab integrates AI technology with education
+          and publishing to help everyone learn easily and share their knowledge with the world.<br><br>
+          Together, we are building a new world of learning. A-Tec Lab will be with you every step of the way.
+        </p>
+        <div class="ceo-signature">
+          <div class="ceo-name">Eunhee Noh</div>
+          <div class="ceo-title">CEO, A-Tec Lab</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO / TIMELINE -->
+<section id="portfolio">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">Portfolio & Vision</div>
+      <div class="section-title">Growth & Vision</div>
+      <div class="section-desc">Key milestones and our vision for the future.</div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-line"></div>
+
+      <div class="timeline-item reveal" data-side="left">
+        <div class="timeline-dot"><i class="fas fa-flag"></i></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Founded</div>
+          <h3>A-Tec Lab Established</h3>
+          <p>Launched as a specialized lab converging AI education and digital publishing. Established the vision: "Teach with AI, Publish Digitally."</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal" data-side="right">
+        <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Education</div>
+          <h3>AI Training Programs Launched</h3>
+          <p>Developed and began operating systematic AI education curricula covering beginners to experts.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal" data-side="left">
+        <div class="timeline-dot"><i class="fas fa-book"></i></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Publishing</div>
+          <h3>Digital Publishing Platform Built</h3>
+          <p>Built a system for producing and distributing various digital publications including e-books and interactive textbooks.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal" data-side="right">
+        <div class="timeline-dot"><i class="fas fa-rocket"></i></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Future</div>
+          <h3>Global AI Education & Publishing Leader</h3>
+          <p>Advancing as a global leader in AI-based education innovation and digital publishing to democratize knowledge.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section-dark">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">Contact</div>
+      <div class="section-title">Contact Us</div>
+      <div class="section-desc">Feel free to reach out for project collaboration, education inquiries, and more.</div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <div class="contact-item-label">Address</div>
+            <div class="contact-item-value">Yangcheon-gu, Seoul, South Korea</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-value">info@a-tec.co.kr</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+          <div>
+            <div class="contact-item-label">Phone</div>
+            <div class="contact-item-value">+82-2-0000-0000</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-globe"></i></div>
+          <div>
+            <div class="contact-item-label">Website</div>
+            <div class="contact-item-value">https://a-tec.netlify.app/</div>
+          </div>
+        </div>
+
+        <div class="contact-social">
+          <a href="#" class="social-link" aria-label="Blog"><i class="fas fa-blog"></i></a>
+          <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+      </div>
+
+      <div class="contact-form reveal" id="contactForm">
+        <div class="form-group">
+          <label for="contactName">Name <span class="required">*</span></label>
+          <input type="text" id="contactName" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="contactEmail">Email <span class="required">*</span></label>
+          <input type="email" id="contactEmail" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="contactSubject">Subject <span class="required">*</span></label>
+          <input type="text" id="contactSubject" placeholder="Enter subject" required>
+        </div>
+        <div class="form-group">
+          <label for="contactMessage">Message</label>
+          <textarea id="contactMessage" placeholder="Please describe your inquiry in detail" rows="5"></textarea>
+        </div>
+        <button class="btn btn-primary btn-submit" id="submitBtn" type="button">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+        <div id="formResult" class="form-result" style="display:none;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-mark">At</div>
+          A-Tec<span>Lab</span>
+        </div>
+        <div class="footer-slogan">Teach with AI, Publish Digitally.</div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-link-group">
+          <h4>Quick Links</h4>
+          <a href="#about">About</a>
+          <a href="#brand">Brand</a>
+          <a href="#services">Services</a>
+        </div>
+        <div class="footer-link-group">
+          <h4>More</h4>
+          <a href="#ceo">Greeting</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        &copy; 2026 A-Tec Lab. All rights reserved.
+      </div>
+      <div class="footer-info">
+        Yangcheon-gu, Seoul | CEO: Eunhee Noh | info@a-tec.co.kr
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Chatbot FAB -->
+<button id="chatbotFab" class="chatbot-fab" aria-label="Open chatbot">
+  <i class="fas fa-comment-dots chatbot-fab-icon-open"></i>
+  <i class="fas fa-times chatbot-fab-icon-close"></i>
+</button>
+
+<!-- Chatbot Panel -->
+<div id="chatbotPanel" class="chatbot-panel" aria-hidden="true">
+  <div class="chatbot-header">
+    <div class="chatbot-header-info">
+      <div class="chatbot-avatar"><i class="fas fa-robot"></i></div>
+      <div>
+        <div class="chatbot-title">A-Tec Chatbot</div>
+        <div class="chatbot-status"><span class="chatbot-online-dot"></span>Online</div>
+      </div>
+    </div>
+    <button class="chatbot-close" id="chatbotClose" aria-label="Close"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="chatbot-messages" id="chatbotMessages">
+    <div class="chatbot-msg bot">
+      <div class="chatbot-msg-bubble">Hello! I'm the A-Tec Lab chatbot. How can I help you with AI education, digital publishing, or consulting?</div>
+      <div class="chatbot-msg-time">Now</div>
+    </div>
+    <div class="chatbot-quickbtns">
+      <button class="chatbot-quick">AI Training</button>
+      <button class="chatbot-quick">Digital Publishing</button>
+      <button class="chatbot-quick">Consulting</button>
+      <button class="chatbot-quick">Contact Info</button>
+    </div>
+  </div>
+  <div class="chatbot-input-area">
+    <input type="text" id="chatbotInput" class="chatbot-input" placeholder="Type a message..." autocomplete="off">
+    <button id="chatbotSend" class="chatbot-send" aria-label="Send"><i class="fas fa-paper-plane"></i></button>
+  </div>
+</div>
+
+<!-- Back to Top -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
